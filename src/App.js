@@ -29,7 +29,16 @@ function App() {
   return (
     <div>
       {/* 디폴트 메타태그를 정의하자. */}
-      <SetMetaTag title="각경휴" image = {istpImage} ></SetMetaTag>
+      {/* <SetMetaTag title="각경휴" image = {istpImage} ></SetMetaTag> */}
+      <Helmet>
+        <meta property="og:title" content="나의 유형은 ISFP[App og:title]"/>
+
+        <meta
+          property="og:description"
+          content="울청스타 IT직업 & 유명인 MBTI 테스트 해보기! [og:description]" />
+        <meta property="og:image" content={ entpImage } /> 
+        <meta property="og:url" content="https://ji-ny.github.io/mbti_test_ulsan/"/> 
+      </Helmet>
       <Routes>
         <Route path={'/mbti_test_ulsan'} element={<Home/>}/>
       </Routes>
