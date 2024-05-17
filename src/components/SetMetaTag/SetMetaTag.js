@@ -6,7 +6,7 @@ const SetMetaTag = props =>{
     // props로 content 내용을 불러온다.
     return(
         <Helmet>
-            {/* <title> 삥삥빵</title> */}
+            <title>나와 잘 맞는 IT직업 & 유명인은 : ${props.title}</title>
             {/* <!-- 제목 --> : "울청스타 IT직업 & 유명인 MBTI 테스트" */}
             <meta property="og:title" content={`나와 잘 맞는 IT직업 & 유명인은 : ${props.title} `}/>
             {/* <!-- 설명 -->  : "울청스타 IT직업 & 유명인 MBTI 테스트 해보기! 나의 유형은? */}
