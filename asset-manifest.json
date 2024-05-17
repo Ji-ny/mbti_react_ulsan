@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mbti_test_ulsan/static/css/main.8834da8e.css",
-    "main.js": "/mbti_test_ulsan/static/js/main.f7dd4101.js",
+    "main.css": "/mbti_test_ulsan/static/css/main.d04a3421.css",
+    "main.js": "/mbti_test_ulsan/static/js/main.6a2e64f1.js",
     "static/js/453.bc7617dd.chunk.js": "/mbti_test_ulsan/static/js/453.bc7617dd.chunk.js",
     "static/media/entj.jpg": "/mbti_test_ulsan/static/media/entj.df028256c07caa8a3e93.jpg",
     "static/media/enfj.jpg": "/mbti_test_ulsan/static/media/enfj.f35ddbff3e3f8983d0a4.jpg",
@@ -21,12 +21,12 @@
     "static/media/enfp.jpg": "/mbti_test_ulsan/static/media/enfp.f0493c9f94ea7af35022.jpg",
     "static/media/isfp.jpg": "/mbti_test_ulsan/static/media/isfp.bf412ba90bf57fac324e.jpg",
     "index.html": "/mbti_test_ulsan/index.html",
-    "main.8834da8e.css.map": "/mbti_test_ulsan/static/css/main.8834da8e.css.map",
-    "main.f7dd4101.js.map": "/mbti_test_ulsan/static/js/main.f7dd4101.js.map",
+    "main.d04a3421.css.map": "/mbti_test_ulsan/static/css/main.d04a3421.css.map",
+    "main.6a2e64f1.js.map": "/mbti_test_ulsan/static/js/main.6a2e64f1.js.map",
     "453.bc7617dd.chunk.js.map": "/mbti_test_ulsan/static/js/453.bc7617dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8834da8e.css",
-    "static/js/main.f7dd4101.js"
+    "static/css/main.d04a3421.css",
+    "static/js/main.6a2e64f1.js"
   ]
 }
