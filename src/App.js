@@ -6,39 +6,10 @@ import { Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import SetMetaTag from './components/SetMetaTag/SetMetaTag';
 
-import istpImage from "./images/istp.jpg";
-import isfpImage from "./images/isfp.jpg";
-import istjImage from "./images/istj.jpg";
-import isfjImage from "./images/isfj.jpg";
-import infjImage from "./images/infj.jpg";
-import intjImage from "./images/intj.jpg";
-import infpImage from "./images/infp.jpg";
-import intpImage from "./images/intp.jpg";
-import esfpImage from "./images/esfp.jpg";
-import estpImage from "./images/estp.jpg";
-import esfjImage from "./images/esfj.jpg";
-import estjImage from "./images/estj.jpg";
-import entpImage from "./images/entp.jpg";
-import enfpImage from "./images/enfp.jpg";
-import enfjImage from "./images/enfj.jpg";
-import entjImage from "./images/entj.jpg";
-import Result from './components/Result/Result';
-
 function App() {
 
   return (
     <div>
-      {/* 디폴트 메타태그를 정의하자. */}
-      {/* <SetMetaTag title="각경휴" image = {istpImage} ></SetMetaTag> */}
-      <Helmet>
-        <meta property="og:title" content="나의 유형은 ISFP[App og:title]"/>
-
-        <meta
-          property="og:description"
-          content="울청스타 IT직업 & 유명인 MBTI 테스트 해보기! [og:description]" />
-        <meta property="og:image" content={ entpImage } /> 
-        <meta property="og:url" content="https://ji-ny.github.io/mbti_test_ulsan/"/> 
-      </Helmet>
       <Routes>
         <Route path={'/mbti_test_ulsan'} element={<Home/>}/>
       </Routes>
