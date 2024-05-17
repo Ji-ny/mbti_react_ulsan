@@ -83,6 +83,9 @@
         
         margin-bottom: 15px;
         color: #333333;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
       }
       //& 유명인 테스트
       > div:nth-child(3){
@@ -91,6 +94,9 @@
         padding-top: 10px;
         margin-bottom: 15px;
         color: #333333;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
       }
       // 메인 사진 
       > img:nth-child(4){
@@ -295,6 +301,8 @@
         .answerBox{
           animation: answer 1.3s running ease; // 애니메이션
 
+          box-sizing: border-box;
+          padding: 5px;
           width: 90%;
           display: flex;
           align-items: center;
@@ -366,6 +374,9 @@
         >div:nth-child(1){
           font-size: 15px;
           color: #848484;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
         }
 
         // 0000형?
@@ -373,6 +384,9 @@
           font-size: 25px;
           color: #333333;
           font-weight: bold;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
 
         }
 
