@@ -9,14 +9,24 @@ const SetMetaTag = props =>{
             {/* <title>안녕</title> */}
             {/* <!-- 제목 --> : "울청스타 IT직업 & 유명인 MBTI 테스트" */}
             <meta
-                property="og:title" content={`SetMeta_title : 나와 잘 맞는 IT직업 & 유명인은 : ${props.title} title`}
-                
+                property="og:title" content={"울청스타 IT직업 & 유명인 MBTI 테스트"}
+
             />
+            {/* <meta
+                property="og:title" content={`SetMeta_title : 나와 잘 맞는 IT직업 & 유명인은 : ${props.title} title`}
+
+            /> */}
             {/* <!-- 설명 -->  : "울청스타 IT직업 & 유명인 MBTI 테스트 해보기! 나의 유형은? */}
             <meta
                 property="og:description"
-                content={`SetMeta_des : 나와 잘 맞는 IT직업 & 유명인은 : ${props.description} `}
+                content={"울청스타 IT직업 & 유명인 MBTI 테스트 해보기! 나의 유형은?"}
             />
+
+            {/* <meta
+                property="og:description"
+                content={`SetMeta_des : 나와 잘 맞는 IT직업 & 유명인은 : ${props.description} `}
+            /> */}
+
             {/* <!-- 이미지 --> */}
             <meta 
                 property="og:image" content={props.image} 

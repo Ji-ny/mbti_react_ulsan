@@ -5,12 +5,12 @@ import Home from './components/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 
 import SetMetaTag from './components/SetMetaTag/SetMetaTag';
-import enfjImage from './images/enfj.jpg'
+import mainImage from './images/main.png'
 function App() {
 
   return (
     <div>
-      <SetMetaTag title="cute" description="설명부분" image={enfjImage}/>
+      <SetMetaTag title="cute" description="설명부분" image={mainImage}/>
       <Routes>
         <Route path={'/mbti_test_ulsan'} element={<Home/>}/>
         {/* <Route path={'/mbti_test_ulsan/result'} element={<div>결과 페이지에용 .</div>}/> */}
