@@ -9,7 +9,7 @@ function Result({mbtiContents, mbtis}){
         const shareData = {
         title: "MbtiTest", // 제목
         text: "울청스타 IT 직군 & 유명인 mbti test 결과보기!", // 공유할때 같이 가는 내용
-        url: "https://ji-ny.github.io/mbti_test_ulsan/", // 사이트
+        url: "https://ji-ny.github.io/mbti_test_ulsan", // 사이트
         };
 
         // 공유기능!
