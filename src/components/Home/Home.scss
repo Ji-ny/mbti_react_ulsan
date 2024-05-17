@@ -73,13 +73,13 @@
         align-items: center;
         justify-content: center;
         border-radius: 50px;
-        font-size: 35px;
+        font-size: 30px;
       }
 
       //나와 잘 맞는 IT 직군
       > div:nth-child(2){
-        margin-top:-15px;
-        font-size: 30px;
+        margin-top:-20px;
+        font-size: 20px;
         
         margin-bottom: 15px;
         color: #333333;
@@ -87,7 +87,7 @@
       //& 유명인 테스트
       > div:nth-child(3){
         margin-top:-25px;
-        font-size: 30px;
+        font-size: 20px;
         padding-top: 10px;
         margin-bottom: 15px;
         color: #333333;

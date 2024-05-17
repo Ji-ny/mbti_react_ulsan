@@ -8,7 +8,7 @@ function Question({questionList, page, mbtiList, handleCkAnswer}){
     <>
         {questionList.map((val,idx)=> //질문 리스트 받기
             <div className='questionList' key={idx} style={{display:page===idx+1? "flex" : "none"}}>
-                {console.log(mbtiList)}
+                {/* {console.log(mbtiList)} */}
                 <div className='questionItemLayout'>
                     {/* 내용 */}
                     <div className="chatListLayout">

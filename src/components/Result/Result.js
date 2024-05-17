@@ -2,6 +2,7 @@
 
 // <Result mbtiContents={mbtiContents} mbtis={mbtis} />
 function Result({mbtiContents, mbtis}){
+    console.log("결과 mbtiContents", mbtiContents);
       // 공유 버튼 나타나개 하는 창 띄우기
     const handleShare  = async () => { // 비동기를 동기처럼 사용하자.
         // 공유하기에 띄울 데이터 

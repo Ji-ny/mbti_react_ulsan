@@ -1,5 +1,6 @@
 import mainImage from '../../images/main.png';
 import { useState, useEffect } from 'react';
+
 function Start({page, setPage}){
     // *---------- 참여한 사람 수 증가 --------------------------------------//
     const [number, setNumber] = useState(0); // 초기 값은 0으로 설정
