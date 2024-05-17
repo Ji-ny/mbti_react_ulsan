@@ -6,19 +6,19 @@ const SetMetaTag = props =>{
     // props로 content 내용을 불러온다.
     return(
         <Helmet>
-            
+            {/* <title>안녕</title> */}
             {/* <!-- 제목 --> : "울청스타 IT직업 & 유명인 MBTI 테스트" */}
-            <meta property="og:title" content={`나와 잘 맞는 IT직업 & 유명인은 : ${props.title} title`}/>
+            <meta property="og:title" content={`SetMeta_title : 나와 잘 맞는 IT직업 & 유명인은 : ${props.title} title`}/>
             {/* <!-- 설명 -->  : "울청스타 IT직업 & 유명인 MBTI 테스트 해보기! 나의 유형은? */}
             <meta
                 property="og:description"
-                content={`나와 잘 맞는 IT직업 & 유명인은 : ${props.description} `}
+                content={`SetMeta_des : 나와 잘 맞는 IT직업 & 유명인은 : ${props.description} `}
                 data-react-helmet="true"
             />
             {/* <!-- 이미지 --> */}
             <meta property="og:image" content={props.image} data-react-helmet="true"/>
             {/* <!-- 링크할 주소 --> */}
-            <meta property="og:url" content="https://Ji-ny.github.io/mbti_test_ulsan/"/>
+            <meta property="og:url" content="https://Ji-ny.github.io/mbti_test_ulsan"/>
         </Helmet>
     );
 };
