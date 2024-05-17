@@ -32,7 +32,8 @@ function Start({page, setPage}){
         <div className='startPageLayout'>
             <div className='startLogo'>
                 <div>울청스타</div>
-                <div>나와 잘 맞는 IT직군 & 유명인 테스트</div>
+                <div>나와 잘 맞는 IT직군</div>
+                <div>& 유명인 테스트</div>
                 <img src={mainImage} alt="사진"/>
             </div>
             <div onClick={()=> setPage(1)} className='startButton' >테스트 시작하기</div>

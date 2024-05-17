@@ -63,7 +63,7 @@
       font-size: 25px;
       font-weight: 700;
     
-      //울산대학교
+      //울청스타
       > div:nth-child(1){
         // background-color: #413730;
         color: #0077C2;
@@ -73,18 +73,27 @@
         align-items: center;
         justify-content: center;
         border-radius: 50px;
-        font-size: 30px;
+        font-size: 35px;
       }
 
-      //새내기 유형 테스트
+      //나와 잘 맞는 IT 직군
       > div:nth-child(2){
+        margin-top:-15px;
+        font-size: 30px;
+        
+        margin-bottom: 15px;
+        color: #333333;
+      }
+      //& 유명인 테스트
+      > div:nth-child(3){
         margin-top:-25px;
         font-size: 30px;
+        padding-top: 10px;
         margin-bottom: 15px;
         color: #333333;
       }
       // 메인 사진 
-      > img:nth-child(3){
+      > img:nth-child(4){
         margin-top:15px;
         width: 300px;
         height: 300px;
