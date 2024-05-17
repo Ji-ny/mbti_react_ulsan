@@ -31,9 +31,7 @@ function App() {
       {/* 디폴트 메타태그를 정의하자. */}
       <SetMetaTag description="각경휴" image = {istpImage} ></SetMetaTag>
       <Routes>
-        <Route path={'/'} element={<Home/>}/>
-        <Route path={'/question'} element={<Home/>}/>
-        <Route path={'/result'} element={<Result/>}/>
+        <Route path={'/mbti_test_ulsan'} element={<Home/>}/>
       </Routes>
       
     </div>

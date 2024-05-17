@@ -17,7 +17,7 @@ const SetMetaTag = props =>{
             {/* <!-- 이미지 --> */}
             <meta property="og:image" content={props.image}/>
             {/* <!-- 링크할 주소 --> */}
-            <meta property="og:url" content="https://Ji-ny.github.io/mbti_test_ulsan/result"/>
+            <meta property="og:url" content="https://Ji-ny.github.io/mbti_test_ulsan/"/>
         </Helmet>
     );
 };
