@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-
 const SetMetaTag = props =>{
     // props로 content 내용을 불러온다.
     return(
