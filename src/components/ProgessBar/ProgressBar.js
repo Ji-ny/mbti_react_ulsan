@@ -12,10 +12,7 @@ function ProgressBar({page, questionList}){
             <div>{`${page} / ${questionList.length}`}</div> 
         
         </div>
-
     )
-
-
 }
 
 export default ProgressBar;

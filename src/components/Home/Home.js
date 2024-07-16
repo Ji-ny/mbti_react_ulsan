@@ -334,142 +334,7 @@ function Home() {
   // mbti 설정해주는 함수
   function setMbti(){
     
-    //각 mbti의 특성
-    // 여기 image로 결과가 나타난다.
-    const mc = [
-      {   mbti:"ISTP", 
-          name: ['스티브잡스'], 
-          contents:['벼락치기 진짜 잘해요.','논리적이고 뛰어난 적응력을 가지고 있어요.','처음엔 낯을 가리지만 친해지면 장난도 잘 쳐요.'],   
-          goods:['ESFJ', 'ENTJ'], //ENFP, ENTJ
-          bads:['INFP, ENFP, INFJ, ENFJ'],
-          image:istpImage,
-        },    // 백과사전형
-          
-          
-  
-      {   mbti:"ISFP", 
-          name: ['이재용'], 
-          contents:['타인 배려를 잘하지만 눈치를 많이 봐요.','순하고 정이 많아요.','상대방의 이야기를 잘 들어줘요.'],   
-          goods:['ENFJ','ESFJ','ESTJ'], //INFJ, INTJ
-          bads:['INFP', 'ENFP', 'INFJ'],
-          image:isfpImage,
-        }, //default    // 성인군자형
-  
-      {   mbti:"ISTJ", 
-          name: ['일론머스크'], 
-          contents:['책임감이 높고, 신중해요.','한번 시작한 일을 끝까지 해내요.','약속 어기는건 싫어요.'],     
-          goods:['ESFP', 'ESTP'], 
-          bads:['INFP', 'ENFP', 'INFJ', 'ENFJ'],
-          image:istjImage,
-        },    // 과학자형
-  
-      {   mbti:"ISFJ", 
-          name: ['카카오톡 개발자'], 
-          contents:['나서는건 싫어하지만 관심받는건 좋아요.','성실하고 온화해요.','눈치가 빠르고 센스있어요.'],       
-          goods:['ESFP','ESTP'], 
-          bads:['INFP', 'ENFP', 'INFJ', 'ENFJ'],
-          image:isfjImage,
-        },    // 권력형
-  
-      {   mbti:"INFJ", 
-          name: ['가온누리 회장 김민재'], 
-          contents:['혼자 쉬는 시간이 필요해요.','인간관계에 통찰력이 뛰어나서, 눈치가 빨라요.','계획적인걸 좋아해요.'],     
-          goods:['ENFP','ENTP'], 
-          bads:['ISFP', 'ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'],
-          image:infjImage,
-        },    // 예언자형
-  
-      {   mbti:"INTJ", 
-          name: ['일론머스크'], 
-          contents:['자립심이 강해요.','효율적이에요.','도움이 필요한 사람에게는 차별없이 잘 도와줘요.'],     
-          goods:['ENFP','ENTP'], 
-          bads:['INFP', 'INFJ', 'ENFJ', 'INTJ', 'ENTJ', 'INTP'],
-          image:intjImage,
-        },    // 과학자형
-  
-      {   mbti:"INFP", 
-          name: ['마인크래프트 개발자'],
-          contents:['공감을 잘해줘요','자주 우울하지만, 티를 안내요.','따뜻한 마음씨를 가져, 사람들과 잘 어울려요.'],   
-          goods:['ENFJ','ENTJ'],  // * ENFJ, ENTJ
-          bads:['ISFP', 'ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'],
-          image:infpImage,
-        }, // * ISFP, ESFP, ISTP, ESTP, ISFJ, ESFJ, ISTJ, ESTJ
-          // 잔다르크형
-  
-      {   mbti:"INTP", 
-          name: ['마크 주커버그'], 
-          contents:['신중하고, 논리적이에요.','감정기복이 적어요.','친해진 사람에게는 정말 잘해줘요.'],   
-          goods:['ENTJ','ESTJ'], 
-          bads:[''],
-          image:intpImage,
-        },    // 아이디어형
-  
-      {   mbti:"ESFP", 
-          name: ['배달의 민족 대표 김봉진'], 
-          contents:['자존감이 높아요.','정이 많아서 거절을 잘 못해요.','평화로운게 좋아요.'],       
-          goods:['ISFJ','ISTJ'], 
-          bads:['INFP', 'ENFP', 'INFJ', 'ENFJ'],
-          image:esfpImage,
-        },    // 사교형
-  
-      {   mbti:"ESTP", 
-          name: ['테트리스 개발자(아타리)'], 
-          contents:['친화력 최강!','직설적인 말투로 오해받을때가 있지만, 절대 나쁜 의도가 아니에요.','재미있는 이야기로 모임을 주도해요.'],    
-          goods:['ISFJ','ISTJ'], 
-          bads:['INFP', 'ENFP', 'INFJ', 'ENFJ'],
-          image:estpImage,
-        },    // 활동가형
-  
-      {   mbti:"ESFJ", 
-          name: ['발로란트 개발자'], 
-          contents:['약속은 무조건 지켜요.','주변 사람을 잘 챙겨줘요.','분위기 파악을 잘 해요.'],   
-          goods:['ISFP','ISTP'], 
-          bads:['INFP','ENFP','INFJ','ENFJ'],
-          image:esfjImage,
-        },    // 친선도모형
-  
-      {   mbti:"ESTJ", 
-          name: ['브롤스타즈 개발자'], 
-          contents:['리더십이 있고 체계적이에요.','호불호가 확실해요.','공정하고 논리적이에요.'],     
-          goods:['ISFP','ISTP'], 
-          bads:['INFP', 'ENFP', 'INFJ', 'ENFJ'],
-          image:estjImage,
-        },    // 사업가형
-  
-      {   mbti:"ENTP", 
-          name: ['AI 개발자'], 
-          contents:['토론이나 논쟁은 이겨야해요.','아이디어가 많아요.','자기주장이 강해요.'],     
-          goods:['INFJ','INTJ'], 
-          bads:[''],
-          image:entpImage,
-        },    // 발명가형
-  
-      {   mbti:"ENFP", 
-          name: ['로블록스 개발자'], 
-          contents:['사교적이고 에너지가 넘쳐요.','쉽게 질려해요.','호기심이 많아요.'],     
-          goods:['INFJ','INTJ'],
-          bads:['ISFP', 'ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ','ISTJ', 'ESTJ'],
-          image:enfpImage,
-        }, //['ISFP', 'ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ','ISTJ', 'ESTJ']  
-            // 스파크형
-  
-      {   mbti:"ENFJ", 
-          name: ['메이플스토리 개발자'], 
-          contents:['타인을 사로잡는 카리스마와 매력이 있어요.','사람들과 커뮤니케이션을 잘해요.','공과 사를 확실히 구분해요.'],  
-          goods:['INFP','ISFP'], 
-          bads:['ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'],
-          image:enfjImage,
-        },    // 언변능숙형
-  
-      {   mbti:"ENTJ", 
-          name: ['빌게이츠'], 
-          contents:['리더 역할을 잘해요.','어딜 가든 누구와 친해질 수 있지만, 굳이 친해지진 않아요.','솔직하면서 단호해요.'],    
-          goods:['INFP','INTP'], 
-          bads:[''],
-          image:entjImage,
-        },    // 지도자형
-  
-    ];
+
 
     // I와 E를 구분한다.
     let IorE= // data : mbtiList를 데표하는 변수.
@@ -496,7 +361,7 @@ function Home() {
     let mbti = IorE+ NorS + ForT + JorP;
     console.log("결과:mbti",mbti);
 
-    // 도출되는 mbti와 mc배열안에 있는 mbti 배열을 찾아서 값이 일치하는 것만 찬는다.
+    //
     setMbtiContents(mbtis.filter((val)=>val.mbti === mbti)[0]); 
     
   

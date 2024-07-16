@@ -12,7 +12,7 @@ function Question({questionList, page, mbtiList, handleCkAnswer}){
                 <div className='questionItemLayout'>
                     {/* 내용 */}
                     <div className="chatListLayout">
-                    {val.q.map((qval, qidx)=>
+                    {val.q.map((qval, qidx)=> // val은 현재 질문 
                         <div key={qidx} className='chatBox'> 
                         
                         <div>Q{page}.</div> {/* 질문 번호 */}
